@@ -118,7 +118,8 @@
 		<p>nombre de qualité de service : <?php echo $count_service_delivery_quality ?></p>
 
 		<h2>Commentaires négatifs</h2>
-
+		<div class="alert alert-dismissible alert-danger">
+  
 		<?php 
 		foreach ($bad_comments as $comments_bad) {
 			foreach ($comments_bad as $bad_comment) {
@@ -127,9 +128,12 @@
 		}
 
 		?>
+		</div>
 
 		<h2>Commentaires positifs</h2>
-
+		
+		<div class="alert alert-dismissible alert-success">
+  		
 		<?php 
 		foreach ($good_comments as $comments_good) {
 			foreach ($comments_good as $good_comment) {
@@ -138,6 +142,7 @@
 		}
 
 		?>
+		</div>
 
 
 	</div>
